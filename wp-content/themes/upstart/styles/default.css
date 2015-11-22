@@ -1,0 +1,122 @@
+@-webkit-keyframes spin-360 {
+  from {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    zoom: 1;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    zoom: 1;
+  }
+  to {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+    zoom: 1;
+  }
+}
+#header #logo {
+  height: 95px;
+  text-align: center;
+  transition-duration: 0.2s;
+}
+#header #logo img {
+  display: inline;
+}
+@media only screen and (min-width: 769px) {
+  #header #logo {
+    margin: 0;
+  }
+}
+#header .site-header {
+  display: table;
+  height: 95px;
+}
+#header .site-header a:after {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #header .site-header {
+    margin: 0 auto;
+  }
+}
+#header .site-title {
+  display: table-cell;
+  vertical-align: middle;
+  width: 200px;
+  padding: 0;
+}
+#header .site-title a {
+  padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  #header .site-title {
+    width: auto;
+    font-size: 2em;
+  }
+}
+@media only screen and (min-width: 769px) {
+  #header .site-title {
+    font-size: 14px;
+    width: 70px;
+  }
+}
+#wpadminbar {
+  position: fixed !important;
+}
+.blog-posts-grid {
+  background: #CFCFCF;
+  margin-bottom: 5.874em;
+}
+.blog-posts-grid > article.testimonial {
+  background: #6D7D8E;
+}
+.blog-posts-grid > article.testimonial:before {
+  display: none;
+}
+.blog-posts-grid > article.testimonial .woo-image {
+  opacity: 0.5;
+  filter: alpha(opacity=@opacity * 100);
+  -webkit-transition: all ease-in-out 0.2s;
+  -moz-transition: all ease-in-out 0.2s;
+  -ms-transition: all ease-in-out 0.2s;
+  -o-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+.blog-posts-grid > article.testimonial .woo-image:hover {
+  opacity: 1;
+  filter: alpha(opacity=@opacity * 100);
+}
+.widget_woothemes_features .feature .feature-title,
+.widget_woothemes_features .feature .feature-content,
+ul.products li.product img {
+  width: 100%;
+}
+.onsale {
+  top: 1.5em;
+  right: -5.4em;
+}
+.price del {
+  color: #B2D7EE;
+  font-weight: 400;
+}
+@media only screen and (max-width: 600px) {
+  ul.products li.product .details h3 {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .blog-posts-grid > article .post-header h1 {
+    font-size: 15px;
+    line-height: 1em;
+  }
+}

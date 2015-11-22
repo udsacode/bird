@@ -1,0 +1,115 @@
+@import "../css/mixins";
+
+#header {
+
+  #logo {
+    height: 95px;
+    text-align: center;
+    transition-duration: 0.2s;
+
+    img {
+      display: inline;
+    }
+
+    &:hover {
+    }
+
+    @media only screen and (min-width: 769px) {
+      margin: 0;
+    }
+
+  }
+
+  .site-header {
+
+    display: table;
+    height: 95px;
+
+    a:after {
+      display: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin: 0 auto;
+    }
+
+  }
+
+  .site-title {
+    display: table-cell;
+    vertical-align: middle;
+    width: 200px;
+    padding: 0;
+
+    a {
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: auto;
+      font-size: 2em;
+    }
+
+    @media only screen and (min-width: 769px) {
+      font-size: 14px;
+      width: 70px;
+    }
+
+  }
+
+}
+
+#wpadminbar {
+  position: fixed !important;
+}
+
+.blog-posts-grid {
+  background: #CFCFCF;
+  margin-bottom: 5.874em;
+
+  & > article.testimonial {
+    background: @color_body;
+
+    &:before {
+      display: none;
+    }
+
+    .woo-image {
+      .opacity(0.5);
+      .transition;
+
+      &:hover {
+        .opacity(1);
+
+      }
+    }
+  }
+}
+
+.widget_woothemes_features .feature .feature-title,
+.widget_woothemes_features .feature .feature-content,
+ul.products li.product img{
+  width: 100%;
+}
+.onsale {
+  top: 1.5em;
+  right: -5.4em;
+}
+
+.price del {
+  color: #B2D7EE;
+  font-weight: 400;
+}
+
+ul.products li.product .details h3 {
+  @media only screen and (max-width: 600px) {
+    font-size: 13px;
+  }
+}
+
+.blog-posts-grid > article .post-header h1 {
+  @media only screen and (max-width: 500px) {
+    font-size: 15px;
+    line-height: 1em;
+  }
+}

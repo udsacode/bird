@@ -1,0 +1,4 @@
+*** Upstart Changelog ***
+	
+2013.11.28 - version 1.0.0
+ * First release!
